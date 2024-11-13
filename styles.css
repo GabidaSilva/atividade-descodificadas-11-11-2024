@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+:root {
+    --color-1: red;
+    --color-2: deepskyblue;
+    --color-3: green;
+    --color-4: yellow;
+    --color-5: #8b0000;
+    --color-6: #ff6347;
+    --color-7: #FFFFFF;
+} 
+
+body {
+    display: flex;
+    background-color:var(--color-7);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 275px);
+    grid-template-rows: repeat(5, 275px);
+    gap: 2px;
+}
+
+.square {
+    width: 275px;
+    height: 275px;
+}
+
+.red { background-color:var(--color-1); }
+.blue { background-color: var(--color-2); }
+.green { background-color:var(--color-3); }
+.yellow { background-color: var(--color-4); }
+
+.corner {
+    border: 2px solid var(--color-5);
+}
+
+.corner:hover {
+    background-color:var(--color-6); 
+}
